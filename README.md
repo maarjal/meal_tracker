@@ -6,7 +6,7 @@
 
 ## Description
 
-The Meal Tracker web app is for logging meals, including the amount of calories and details.
+The Meal Tracker web app helps to keep track of your meals. Features include calorie amount and comments display.
 
 ## The project meets following objectives:
 
@@ -41,7 +41,6 @@ Email : maarja.laineste@gmail.com
 
 * HTML
 * CSS
-* Sass
 * Bootstrap
 * JavaScript
 * TypeScript
