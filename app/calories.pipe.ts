@@ -15,7 +15,7 @@ export class CaloriesPipe implements PipeTransform {
       });
     } else if (desiredCaloriesAmount === "high") {
       return input.filter(function(meal) {
-        return meal.calories > 500;
+        return meal.calories >= 500;
       });
     } else {
       return input;

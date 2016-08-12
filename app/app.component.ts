@@ -1,4 +1,4 @@
-import { Component, EventEmitter } from 'angular2/core';
+import { Component } from 'angular2/core';
 import { Meal } from './meal.model';
 import { MealListComponent } from './meal-list.component';
 
@@ -8,8 +8,8 @@ import { MealListComponent } from './meal-list.component';
   template: `
   <div class="container">
     <h1>Meal Tracker</h1>
-  </div>
   <meal-list [mealList]="meals"></meal-list>
+  </div>
   `
 })
 
