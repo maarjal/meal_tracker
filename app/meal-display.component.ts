@@ -9,8 +9,8 @@ import { NewMealComponent } from './new-meal.component';
   template: `
   <div class="container">
     <h3>{{ meal.name }}</h3>
-    <p>{{ meal.calories }}</p>
-    <p>{{ meal.details }}</p>
+    <p>Calories: {{ meal.calories }}</p>
+    <p>Comments: {{ meal.details }}</p>
   </div>
   `
 })
