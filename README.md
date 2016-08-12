@@ -1,12 +1,12 @@
-# Angular JS Meal Tracker
+# AngularJS Meal Tracker
 
-#### An Angular JS meal tracking application. August 12, 2016
+#### AngularJS meal tracking application. August 12, 2016
 
 #### By Maarja Laineste
 
 ## Description
 
-Meal Tracker is for logging meals, including the amount of calories and details.
+The Meal Tracker web app is for logging meals, including the amount of calories and details.
 
 ## The project meets following objectives:
 
@@ -45,7 +45,7 @@ Email : maarja.laineste@gmail.com
 * Bootstrap
 * JavaScript
 * TypeScript
-* Angular JS
+* AngularJS
 * Gulp
 * Bower
 * Node.js
