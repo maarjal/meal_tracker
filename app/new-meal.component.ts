@@ -9,12 +9,12 @@ import { Meal } from './meal.model';
     <h3>Log a New Meal</h3>
     <form class="newMeal">
       <input placeholder="Enter meal"
-      #newMeal>
+      #newMeal class="form-control"/>
       <input placeholder="Amount of Calories" type="number"
-      #mealCalories>
-      <textarea placeholder="Details"
-      #mealDetails></textarea>
-      <button (click)="addMeal(newMeal, mealCalories, mealDetails)">Submit</button>
+      #mealCalories class="form-control"/>
+      <input placeholder="Details"
+      #mealDetails class="form-control"/>
+      <button (click)="addMeal(newMeal, mealCalories, mealDetails)" class="btn btn-primary">Submit</button>
     </form>
   </div>
   `

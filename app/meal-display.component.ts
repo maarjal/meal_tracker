@@ -7,9 +7,11 @@ import { NewMealComponent } from './new-meal.component';
   inputs: ['meal'],
   directives: [NewMealComponent],
   template: `
-  <h3>{{ meal.name }}</h3>
-  <p>{{ meal.calories }}</p>
-  <p>{{ meal.details }}</p>
+  <div class="container">
+    <h3>{{ meal.name }}</h3>
+    <p>{{ meal.calories }}</p>
+    <p>{{ meal.details }}</p>
+  </div>
   `
 })
 
