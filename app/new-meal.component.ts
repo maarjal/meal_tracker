@@ -28,7 +28,6 @@ export class NewMealComponent {
   addMeal(newMeal: HTMLInputElement, mealCalories: HTMLInputElement, mealDetails: HTMLInputElement) {
     var newLoggedMeal = new Meal(newMeal.value, parseInt(mealCalories.value), mealDetails.value);
     this.onSubmitNewMeal.emit(newLoggedMeal);
-    console.log(newLoggedMeal);
     newMeal.value = "";
     mealCalories.value = "";
     mealDetails.value = "";
