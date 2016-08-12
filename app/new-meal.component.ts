@@ -10,10 +10,10 @@ import { Meal } from './meal.model';
     <form class="newMeal">
       <input placeholder="Enter meal"
       #newMeal>
-      <input placeholder="Amount of Calories"
+      <input placeholder="Amount of Calories" type="number"
       #mealCalories>
-      <input placeholder="Details"
-      #mealDetails>
+      <textarea placeholder="Details"
+      #mealDetails></textarea>
       <button (click)="addMeal(newMeal, mealCalories, mealDetails)">Submit</button>
     </form>
   </div>
@@ -21,14 +21,14 @@ import { Meal } from './meal.model';
 })
 
 export class NewMealComponent {
-  public onSubmitNewMeal: EventEmitter<String[]>;
+  public onSubmitNewMeal: EventEmitter<Meal>;
   constructor() {
     this.onSubmitNewMeal = new EventEmitter();
   }
   addMeal(newMeal: HTMLInputElement, mealCalories: HTMLInputElement, mealDetails: HTMLInputElement) {
-    var inputValues = [newMeal.value, mealCalories.value, mealDetails.value];
-    this.onSubmitNewMeal.emit(inputValues);
-    console.log(inputValues);
+    var newLoggedMeal = new Meal(newMeal.value, parseInt(mealCalories.value), mealDetails.value);
+    this.onSubmitNewMeal.emit(newLoggedMeal);
+    console.log(newLoggedMeal);
     newMeal.value = "";
     mealCalories.value = "";
     mealDetails.value = "";
